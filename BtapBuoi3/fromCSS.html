@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký Tài Khoản</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 95vh;
+        }
+        
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 90%;
+            max-width: 500px;
+        }
+        
+        h1 {
+            color: red;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        .description {
+            text-align: center;
+            color: greenyellow;
+            margin-bottom: 25px;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-row {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .form-row .form-group {
+            flex: 1;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: goldenrod;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            color: teal;
+        }
+        
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        
+        hr {
+            border: none;
+            border-top: 1px solid #eee;
+            margin: 20px 0;
+        }
+        
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            margin-left: 35px;
+        }
+        
+        .checkbox-group input {
+            margin-right: 10px;
+        }
+        
+        .submit-btn {
+            background-color: yellow;
+            color: blue;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            width: 60%;
+            transition: background-color 0.3s;
+            display: block;
+            margin: 0 auto;
+           
+        }
+        
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+        
+        @media (max-width: 600px) {
+            .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Đăng ký tài khoản!</h1>
+        <p class="description">Nhập và lựa chọn các thông tin đăng ký</p>
+        
+        <form action="#" method="post">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="ho-dem">Họ đệm</label>
+                    <input type="text" id="ho-dem" name="ho-dem" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="ten">Tên</label>
+                    <input type="text" id="ten" name="ten" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Địa chỉ Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="sdt">Số điện thoại</label>
+                    <input type="tel" id="sdt" name="sdt" required>
+                </div>
+            </div>
+            
+            <hr>
+            
+            <div class="form-group">
+                <label for="tinh">Chọn tỉnh</label>
+                <select id="tinh" name="tinh">
+                    <option value="">Chọn tỉnh</option>
+                    <option value="hanoi">Hà Nội</option>
+                    <option value="hcm">TP. Hồ Chí Minh</option>
+                    <option value="danang">Đà Nẵng</option>
+                    <option value="haiphong">Hải Phòng</option>
+                    <option value="cantho">Cần Thơ</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="thanhpho">Chọn thành phố</label>
+                <select id="thanhpho" name="thanhpho">
+                    <option value="">Chọn thành phố</option>
+                    <option value="tp1">Thủ Đức</option>
+                    <option value="tp2">TP Quảng Ninh</option>
+                    <option value="tp3">TP Huế</option>
+                    <option value="tp4">TP Cần Thơ</option>
+                    <option value="tp5">TP Điện Biên Phủ</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="ghichu">Ghi chú</label>
+                <textarea id="ghichu" name="ghichu"></textarea>
+            </div>
+            
+            <div class="checkbox-group">
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">Tôi đồng ý với các điều khoản và điều kiện</label>
+            </div>
+            
+            <button type="submit" class="submit-btn">Đăng ký</button>
+        </form>
+    </div>
+</body>
+</html>

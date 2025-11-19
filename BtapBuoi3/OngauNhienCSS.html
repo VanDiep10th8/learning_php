@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Danh sách sinh viên</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+    }
+    h1 {
+        background-color: aquamarine;
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        
+    }
+    table {
+      border-collapse: collapse;
+      width: 90%;
+      margin: 0 auto;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: orange;
+      color: azure;
+    }
+    td[colspan] {
+      font-weight: bold;
+      text-align: right;
+      color: blueviolet;
+    }
+  </style>
+</head>
+<body>
+    <h1> Thông Tin Sinh Viên   </h1>
+  <table>
+    <tr>
+      <th>STT</th>
+      <th>HỌ TÊN</th>
+      <th>LỚP</th>
+      <th>MÃ SINH VIÊN</th>
+      <th>GHI CHÚ</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Nguyễn Văn A</td>
+      <td>74KTKT28</td>
+      <td>74KTKT22227</td>
+      <td rowspan="2" style="background-color: blueviolet;">Hoàn cảnh khó khăn</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Trần Thị B</td>
+      <td>73CNTT22</td>
+      <td>73KTMM121213</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Hà Đức C</td>
+      <td>75HTTT21</td>
+      <td>75HTTT654987</td>
+      <td rowspan="3" style="color: brown;">Đạt giải Olympic</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Hoàng Anh D</td>
+      <td>75DCTT23</td>
+      <td>75DCTT22222</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Lương Hữu H</td>
+      <td>72CKDT26</td>
+      <td>72CKCK11111</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align:center; font-weight:bold; background-color: yellow;">Tổng số:</td>
+      <td colspan="2"  style="text-align: center; background-color: blanchedalmond;" >5</td>
+      <td></td>
+    </tr>
+  </table>
+
+</body>
+</html>
