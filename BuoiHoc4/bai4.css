@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+p {
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f98cd4;
+    color: white;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#myBtn {
+    background-color: #008CBA;
+}
+
+#myBtn:hover {
+    background-color: #007399;
+}
+
+#myButton {
+    background-color: #f44336;
+}
+
+#myButton:hover {
+    background-color: #da190b;
+}
+
+#hoverBtn {
+    background-color: #ff9800;
+}
+
+#hoverBtn:hover {
+    background-color: #e68900;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    flex: 1;
+    font-size: 100%;
+    size: 50px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+#myForm button {
+    background-color: #2196F3;
+}
+
+#myForm button:hover {
+    background-color: #0b7dda;
+}
