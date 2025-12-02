@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        #login-form {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 15px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #message {
+            margin-top: 18px;
+            padding: 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .error {
+            color: red;
+            background-color: #ffe0e0;
+            border: 1px solid red;
+        }
+        .success {
+            color: blue; 
+            background-color: #e0f7ff;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="login-form">
+        <h2>Đăng nhập</h2>
+        <label for="username"><b>Username</b></label>
+        <input type="text" id="username" placeholder="Nhập Username">
+
+        <label for="password"><b>Password</b></label>
+        <input type="password" id="password" placeholder="Nhập Password">
+
+        <button onclick="xacminh()">Đăng nhập</button>
+
+        <div id="message"></div>
+    </div>
+
+    <script lang="JavaScript"  src="./domDN.js"></script>
+</body>
+</html>
