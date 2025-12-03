@@ -1,0 +1,130 @@
+
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lấy và Gán Style bằng JavaScript</title>
+    <style>
+        #text {
+            color: blue;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <p id="text">Đây là đoạn văn bản.</p>
+    <button onclick="getStyle()">📌 Lấy style</button>
+    <button onclick="setStyle()">🎨 Gán style</button>
+
+    <p id="result"></p>
+</body>
+
+    <script>
+        function getStyle() {
+            let element = document.getElementById("text");
+            let style = window.getComputedStyle(element);
+
+            let color = style.color;
+            let fontSize = style.fontSize;
+            let fontWeight = style.fontWeight;
+
+            document.getElementById("result").innerHTML =
+                `Màu chữ: ${color} <br> Kích thước chữ: ${fontSize} <br> Độ đậm: ${fontWeight}`;
+        }
+
+        function setStyle() {
+            let element = document.getElementById("text");
+
+            element.style.color = "red"; 
+            element.style.fontSize = "25px"; 
+            element.style.fontWeight = "normal"; 
+            element.style.backgroundColor = "yellow"; 
+        }
+    </script>
+
+</html>
+
+
+
+
+<!--    --hien thi nd thay doi
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Element trong JavaScript</title>
+    <style>
+        .highlight { color: red; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1 id="title">Xin chào DOM!</h1>
+    <p class="description">Đây là một đoạn văn có class.</p>
+    <p class="description">Đây là đoạn văn thứ hai có cùng class.</p>
+    <button onclick="changeText()">Thay đổi nội dung</button>
+    <ul id="list">
+        <li>Phần tử 1</li>
+        <li>Phần tử 2</li>
+        <li>Phần tử 3</li>
+    </ul>
+    <script src="script.js"></script>
+</body>
+</html>     -->
+
+
+
+<!-- --hien thi anh thay the -->
+
+<!-- <!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thay thế phần tử bằng JavaScript</title>
+    <style>
+        #container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        img {
+            width: 200px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Cat_on_a_Book.jpg/960px-Cat_on_a_Book.jpg" alt="Hình ảnh ban đầu">
+        <button onclick="replaceElement()">Thay thế hình ảnh</button>
+    </div>
+
+    <script lang ="javascript" src="./script.js"> </script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
