@@ -4,11 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kết nối csdl sinh viên</title>
+
+    <style>
+        h2 {
+            color: #a80e1bff; 
+            font-family: Arial, sans-serif;
+            margin-bottom: 20px;
+            text-align: center; 
+        }
+        table {
+            border-collapse: collapse; 
+            width: 60%; 
+            margin: 0 auto; 
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #bee0f3ff; 
+            color: orangered; 
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid #ddd; 
+            font-family: Arial, sans-serif;
+        }
+    </style>
+
 </head>
 <body>
     <h2>Danh sách sinh viên</h2>
     <?php 
-    $conn = mysqli_connect("localhost", "root", "", "test");
+    $conn = mysqli_connect("localhost", "root", "", "testdb");
 
     // Kiểm tra kết nối
     if (!$conn) {
